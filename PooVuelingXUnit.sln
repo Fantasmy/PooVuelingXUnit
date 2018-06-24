@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooVuelingXUnit", "PooVueli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooVuelingXUnit.Integration.Tests", "PooVuelingXUnit.Integration.Tests\PooVuelingXUnit.Integration.Tests.csproj", "{74BAB5B1-C60E-4ADF-B2D2-9FE292E1E88C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooVuelingXUnit.Integration.Test", "PooVuelingXUnit.Integration.Test\PooVuelingXUnit.Integration.Test.csproj", "{B03E30CD-4A87-4D29-9E73-A9AA41D26AF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooVuelingXUnit.Unit.Tests", "PooVuelingXUnit.Unit.Tests\PooVuelingXUnit.Unit.Tests.csproj", "{1ED35EFB-BAE1-4D4B-BF57-4E03DF8165B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{74BAB5B1-C60E-4ADF-B2D2-9FE292E1E88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74BAB5B1-C60E-4ADF-B2D2-9FE292E1E88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74BAB5B1-C60E-4ADF-B2D2-9FE292E1E88C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B03E30CD-4A87-4D29-9E73-A9AA41D26AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B03E30CD-4A87-4D29-9E73-A9AA41D26AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B03E30CD-4A87-4D29-9E73-A9AA41D26AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B03E30CD-4A87-4D29-9E73-A9AA41D26AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED35EFB-BAE1-4D4B-BF57-4E03DF8165B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED35EFB-BAE1-4D4B-BF57-4E03DF8165B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED35EFB-BAE1-4D4B-BF57-4E03DF8165B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED35EFB-BAE1-4D4B-BF57-4E03DF8165B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

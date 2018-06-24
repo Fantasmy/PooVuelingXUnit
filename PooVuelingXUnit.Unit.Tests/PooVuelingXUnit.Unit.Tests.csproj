@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{74BAB5B1-C60E-4ADF-B2D2-9FE292E1E88C}</ProjectGuid>
+    <ProjectGuid>{1ED35EFB-BAE1-4D4B-BF57-4E03DF8165B5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PooVuelingXUnit.Integration.Tests</RootNamespace>
-    <AssemblyName>PooVuelingXUnit.Integration.Tests</AssemblyName>
+    <RootNamespace>PooVuelingXUnit.Unit.Tests</RootNamespace>
+    <AssemblyName>PooVuelingXUnit.Unit.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NMock3, Version=3.5.44.0, Culture=neutral, PublicKeyToken=cf53a760d95f4c33, processorArchitecture=MSIL">
+      <HintPath>..\packages\NMock3.3.5.44\lib\net40\NMock3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculadoraTests.cs" />
+    <Compile Include="NMock3\NMockTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +69,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="NMock3\NMock3 Cheat Sheet.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
