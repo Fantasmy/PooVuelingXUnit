@@ -5,25 +5,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace poVueling.XUnit.Tests
+namespace PooVuelingXUnit.Unit.Tests
 {
-    public class CalculadoraTests
+    public class CalculadoraTests : IClassFixture<CalculadoraFixture>
     {
-        [Fact]
-        public void PassingTest()
+        CalculadoraFixture fixture;
+
+        public CalculadoraTests(CalculadoraFixture fixture)
         {
-            Assert.Equal(2, Divide(4, 2));
+            this.fixture = fixture;
         }
 
         [Fact]
-        public void FailingTest()
+        public void DivisionTest()
         {
-            Assert.Equal(3, Divide(4, 2));
+            Assert.Equal(2, fixture.MockObject.Division(4, 2));
         }
 
-        int Divide(int x, int y)
+        [Fact]
+        public void MultiplicacionTest()
         {
-            return x / y;
+            Assert.Equal(44, fixture.MockObject.Division(2, 2));
+        }
+
+        [Fact]
+        public void RestaTest()
+        {
+            Assert.Equal(2, fixture.MockObject.Division(4, 2));
+        }
+
+        [Fact]
+        public void SumaTest()
+        {
+            Assert.Equal(4, fixture.MockObject.Division(2, 2));
+        }
+
+        [Fact]
+        public void SumaErrorTest()
+        {
+            Assert.Equal(5, fixture.MockObject.Division(2, 2));
         }
     }
 }

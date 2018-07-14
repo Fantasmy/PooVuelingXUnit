@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace poVueling
+namespace PooVuelingXUnit
 {
-    public class Calculadora : ICalculadora, ICloneable
+    public class Calculadora : ICalculadora
     {
-        public object Clone()
-        {
-            throw new NotImplementedException();
-        }
 
         public int Division(int num1, int num2)
         {

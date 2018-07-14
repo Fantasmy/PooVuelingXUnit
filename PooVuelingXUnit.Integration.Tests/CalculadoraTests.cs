@@ -5,20 +5,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace poVueling.XUnit.Tests
+
+namespace PooVuelingXUnit.Integration.Tests
 {
     public class CalculadoraTests
     {
         ICalculadora iCalculadora = new Calculadora();
 
-        [Theory]
-        [InlineData(4, 2, 2)]
-        [InlineData(9, 3, 3)]
-        public void DivisionTest(int num1, int num2, int result)
+        [Fact]
+        public void DivisionTest()
         {
-            Assert.True(iCalculadora.Division(num1, num2) == result);
+            Assert.Equal(3, iCalculadora.Division(9, 3));
         }
 
+        [Fact]
+        public void MultiplicacionTest()
+        {
+            Assert.Equal(9, iCalculadora.Division(3, 3));
+        }
 
+        [Fact]
+        public void SumaTest()
+        {
+            Assert.Equal(4, iCalculadora.Division(2, 2));
+        }
+
+        [Fact]
+        public void RestaTest()
+        {
+            Assert.Equal(3, iCalculadora.Division(8, 5));
+        }
     }
 }
